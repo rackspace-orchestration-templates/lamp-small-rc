@@ -112,6 +112,16 @@ parameters:
       - 16GB Instance
       - 32GB Instance
       - 64GB Instance
+  loadbalancer_flavor:
+    type: string
+    default: 2 GB General Purpose v1
+    label: Server Flavor
+    description: Flavor of Cloud Server to use for the load balancer
+    constraints:
+    - allowed_values:
+      - 2 GB General Purpose v1
+      - 4 GB General Purpose v1
+      - 8 GB General Purpose v1
   server_image:
     type: string
     default: f4bbbce2-50b0-4b07-bf09-96c175a45f4b
